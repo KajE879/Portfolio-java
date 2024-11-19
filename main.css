@@ -1,8 +1,9 @@
    /*Main*/
 h1{
     font-family: sans-serif;
-    color: rgb(0, 110, 176);
+    color: white;
     font-size: 1.7em;
+    transition: color 3s;
 }
 h2{
     color: white;
