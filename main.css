@@ -28,6 +28,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .text-blue{
     color: #006eb0;
@@ -262,3 +263,70 @@ p a{
     background-color: rgb(0, 110, 176);
     transition: background-color 500ms;
 }
+
+
+
+
+
+.cookie-consent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.cookie-content {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.cookie-content p{
+    color: #ffffff;
+}
+
+.cookie-content label{
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+button {
+    background-color: rgb(0, 110, 176);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(0, 157, 255);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
