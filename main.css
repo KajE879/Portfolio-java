@@ -1,126 +1,128 @@
-   /*Main*/
-h1{
+/* Main */
+h1 {
     font-family: sans-serif;
-    color: white;
+    color: #006eb0;
     font-size: 1.7em;
     transition: color 3s;
 }
-h2{
+
+h2 {
     color: white;
     text-decoration: none;
     font-size: 1.125em;
 }
-p{
-    font-family: arial;
-    color: white;
+
+p {
+    font-family: Arial, sans-serif;
     font-size: 1em;
 }
-header img{
+
+header img {
     width: 75px;
 }
-.text-roman{
+
+.text-roman {
     font-family: 'Times New Roman', Times, serif;
 }
-body{
-    background-image: url(images/background.jpg);
-    background-color: #000000;
+
+body {
     height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(images/background.jpg) center no-repeat;
     background-size: cover;
-    overflow: hidden;
+    background-color: #000;
+    color: white;
 }
-.text-blue{
+
+.text-blue {
     color: #006eb0;
 }
-.text-bold{
+
+.text-bold {
     font-weight: bold;
 }
 
-
-
-    /*ervaringen-video*/
-.erv-main{
+/* Ervaringen Video */
+.erv-main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    flex-direction: row;
     gap: 200px;
 }
-video{
+
+video {
     height: 300px;
     width: 550px;
 }
-.erv-main a{
+
+.erv-main a {
     text-decoration: none;
 }
-.erv-main h2{
-    transition: color 500ms;
+
+.erv-main h2 {
+    transition: color 0.5s;
 }
 
-
-
-    /*header-nav*/
-header{
+/* Header Navigation */
+header {
     height: 50px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 nav {
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 nav ul {
-    display: flex; 
-    list-style: none; 
-    padding: 0; 
+    display: flex;
+    list-style: none;
+    padding: 0;
     margin: 0;
-    gap: 50px; 
+    gap: 50px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
-    transition: color 500ms;
+    transition: color 0.5s;
 }
+
 .effect:hover {
     color: #006eb0;
-    transition: color 500ms;
 }
 
-
-
-    /*Table*/
-table{
+/* Table */
+table {
     color: white;
     text-align: center;
     width: 500px;
     height: 250px;
 }
-thead{
+
+thead {
     height: 50px;
 }
-th{
-    background-color: #006db066;
+
+th {
+    background-color: rgba(0, 109, 176, 0.4);
 }
-td{
-    border: 1px solid #ffffff80;
-    transition: background-color 500ms
+
+td {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: background-color 0.5s;
 }
+
 table tr:hover td {
-    background-color: hsla(0, 0%, 0%, 0.5);
-    transition: background-color 500ms;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-    /*Index*/
-article a{
+/* Index */
+article a {
     background-color: rgba(180, 180, 180, 0.5);
     padding: 15px 45px;
     border-left: 2px solid white;
@@ -130,71 +132,73 @@ article a{
     text-decoration: none;
     display: inline-block;
     font-size: 1em;
-    transition: background-color 500ms;
+    transition: background-color 0.5s;
 }
-article{
+
+article {
     width: 500px;
     text-align: left;
     padding: 20px;
-    border-left: solid 2px white;
+    border-left: 2px solid white;
 }
-.foto-me{
+
+.foto-me {
     width: 350px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgb(0, 110, 176);
 }
-.index-main{
+
+.index-main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
-    flex-direction: row;
     gap: 300px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     gap: 25px;
 }
+
 .beffect:hover {
     background-color: rgb(0, 110, 176);
-    transition: background-color 500ms;
 }
 
-
-
-    /*Projects*/
+/* Projects */
 .polaroid {
-    background-color: #000000a8;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(0, 0, 0, 0.66);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
     width: 400px;
     border-radius: 25px;
 }
+
 .container {
     text-align: center;
 }
-.img-polaroid{
+
+.img-polaroid {
     width: 400px;
     height: 225px;
     border-radius: 25px;
 }
-.link-pol{
+
+.link-pol {
     text-decoration: none;
 }
-.projects{
+
+.projects {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 40vh;
-    flex-direction: row;
     gap: 50px;
     margin-top: 35px;
 }
 
-
-
-    /*contact*/
-.contacts{
-    background-color: rgba(0, 0, 0, 0.750);
+/* Contact */
+.contacts {
+    background-color: rgba(0, 0, 0, 0.75);
     border: 2px solid white;
     color: white;
     border-radius: 25px;
@@ -205,16 +209,19 @@ article{
     padding: 30px;
     width: 500px;
 }
-.socials a img{
+
+.socials a img {
     width: 60px;
 }
-p a{
+
+p a {
     text-decoration: none;
-    color: rgba(180, 180, 180, 0.750);
-    transition: color 500ms;
+    color: rgba(180, 180, 180, 0.75);
+    transition: color 0.5s;
 }
-.socials{
-    background-color: rgba(180, 180, 180, 0.499);
+
+.socials {
+    background-color: rgba(180, 180, 180, 0.5);
     border: 2px solid white;
     border-radius: 25px;
     padding: 5px;
@@ -222,7 +229,8 @@ p a{
     width: 300px;
     margin: 0 auto;
 }
-.social-contact{
+
+.social-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,17 +239,21 @@ p a{
     gap: 25px;
     margin-top: 40px;
 }
+
 .contact-form {
     width: 100%;
 }
+
 .contact-form h2 {
     margin-bottom: 15px;
     color: white;
 }
+
 .contact-form label {
     font-size: 1em;
     color: white;
 }
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -249,25 +261,29 @@ p a{
     margin: 3px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
-
+    background-color: rgb(255, 255, 255);
 }
+
 .contact-form button {
     padding: 10px 15px;
     color: #fff;
     background-color: rgba(180, 180, 180, 0.5);
     border: none;
     border-radius: 5px;
-    transition: background-color 500ms;
+    transition: background-color 0.5s;
 }
+
 .contact-form button:hover {
     background-color: rgb(0, 110, 176);
-    transition: background-color 500ms;
 }
 
+footer {
+    display: flex;
+    justify-content: right;
+    align-items: bottom;
+}
 
-
-
-
+/* Cookie Consent */
 .cookie-consent {
     position: fixed;
     top: 0;
@@ -291,12 +307,12 @@ p a{
     width: 90%;
 }
 
-.cookie-content p{
-    color: #ffffff;
+.cookie-content p {
+    color: #fff;
 }
 
-.cookie-content label{
-    color: #ffffff;
+.cookie-content label {
+    color: #fff;
     margin-right: 15px;
 }
 
@@ -305,9 +321,6 @@ button {
     border: none;
     color: white;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -316,17 +329,126 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 157, 255);
+    background-color: rgb(0, 110, 176);
 }
 
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.check{
+.check {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
 }
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+
+
+
+
+
+/* Light Mode */
+body.light-mode {
+    background: url(images/bwhite.jpg) center no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    color: black;
+}
+
+body.light-mode h2, body.light-mode p, body.light-mode nav a{
+    color: black;
+}
+
+body.light-mode table{
+    color: black;
+}
+body.light-mode td{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+body.light-mode article a{
+    border-left: 2px solid rgb(0, 0, 0);
+    border-right: 2px solid rgb(0, 0, 0);
+    background-color: rgba(80, 80, 80, 0.5);
+}
+body.light-mode article{
+    border-left: 2px solid rgb(0, 0, 0);
+}
+body.light-mode .contacts{
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid rgb(0, 0, 0);
+}
+body.light-mode label{
+    color: black;
+}
+
+body.light-mode .contact-form input, .contact-form textarea {
+    background-color: rgb(200, 200, 200);
+    border: 1px solid #ffffff;
+}
+
+body.light-mode .socials{
+    border: 2px solid black;
+}
+
+body.light-mode .contacts a {
+    color: rgba(80, 80, 80, 0.75);
+    transition: color 0.5s;
+}
+
+body.light-mode .contacts a:hover {
+    color: rgb(0, 110, 176);
+}
+
+body.light-mode .polaroid  {
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
 

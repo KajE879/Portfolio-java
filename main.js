@@ -1,8 +1,4 @@
-function changcolor() {
-    document.getElementById("h1").style.color = "#006eb0";
-}
-setTimeout(changcolor, 3000);
-
+// Cookie consent
 function acceptCookies() {
     const consentPopup = document.querySelector('.cookie-consent');
     const checkbox = document.getElementById('accept-cookies');
@@ -20,4 +16,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 });
 
+// Toggle light mode
+document.addEventListener('DOMContentLoaded', (event) => {
+    if (localStorage.getItem('lightMode') === 'true') {
+        document.body.classList.add('light-mode');
+        document.getElementById('colorSwitchLabel').checked = true;
+    }
+});
+document.getElementById('colorSwitchLabel').addEventListener('change', function () {
+    if (this.checked) {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('lightMode', 'true');
+    } else {
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('lightMode', 'false');
+    }
+});
+
+// console.log 
+const form = document.querySelector('#mijnFormulier');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log('Formulier verzonden');
+    const nameInput = document.querySelector('input[name="name"]').value;
+    const emailInput = document.querySelector('input[name="email"]').value;
+    const messageInput = document.querySelector('textarea[name="message"]').value;
+    console.log('Naam:', nameInput);
+    console.log('E-mail:', emailInput);
+    console.log('Bericht:', messageInput);
+});
 
