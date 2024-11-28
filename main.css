@@ -122,17 +122,22 @@ table tr:hover td {
 }
 
 /* Index */
-article a {
+article button {
     background-color: rgba(180, 180, 180, 0.5);
     padding: 15px 45px;
     border-left: 2px solid white;
     border-right: 2px solid white;
     color: white;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 1em;
     transition: background-color 0.5s;
+    border-radius: 0px;
+}
+
+article a{
+    text-decoration: none;
+    color: white;
 }
 
 article {
@@ -162,7 +167,7 @@ article {
 }
 
 .beffect:hover {
-    background-color: rgb(0, 110, 176);
+    background-color: rgba(0, 109, 176, 0.5);
 }
 
 /* Projects */
@@ -413,10 +418,13 @@ body.light-mode table{
 body.light-mode td{
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
-body.light-mode article a{
+body.light-mode article button{
     border-left: 2px solid rgb(0, 0, 0);
     border-right: 2px solid rgb(0, 0, 0);
     background-color: rgba(80, 80, 80, 0.5);
+}
+body.light-mode article a{
+    color: black;
 }
 body.light-mode article{
     border-left: 2px solid rgb(0, 0, 0);

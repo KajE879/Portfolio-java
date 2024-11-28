@@ -5,6 +5,7 @@ function acceptCookies() {
     if (checkbox.checked) {
         consentPopup.style.display = 'none';
         localStorage.setItem('cookiesAccepted', 'true');
+        console.log('Cookies are accepted.');
     } else {
         alert("Please accept the cookies to proceed.");
     }
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         consentPopup.style.display = 'none';
     }
 });
+
 
 // Toggle light mode
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -46,3 +48,12 @@ form.addEventListener('submit', (event) => {
     console.log('Bericht:', messageInput);
 });
 
+
+function handleContactClick() { 
+    console.log('CV button was clicked.'); 
+    location.href = 'Contact.html'; 
+} 
+function handleDownloadClick() { 
+    console.log('Download button was clicked.'); 
+    location.href = 'images/CV-KajvEs.pdf'; 
+}
