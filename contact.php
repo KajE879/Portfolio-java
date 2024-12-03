@@ -7,19 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <a href="index.html">
-        <img src="images/logo.png" alt="website logo">
-        </a>
-    </header>
-    <nav>
-        <ul>
-            <li><a class="effect" href="index.html">Home</a></li>
-            <li><a class="effect" href="Ervaringen.html">Ervaringen</a></li>
-            <li><a class="effect" href="Contact.html">Contact</a></li>
-            <li><a class="effect" href="Projecten.html">Projecten</a></li>
-        </ul>
-    </nav>
+<?php require "nav-head.php"?>
     <main class="social-contact">
         <div class="contacts">
             <h1 class="text-roman">Contact:</h1>

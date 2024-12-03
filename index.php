@@ -3,27 +3,14 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="java" href="mian.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <header>
-        <a href="index.html">
-        <img src="images/logo.png" alt="website logo">
-        </a>
-    </header>
-    <nav>
-        <ul>
-            <li><a class="effect" href="index.html">Home</a></li>
-            <li><a class="effect" href="Ervaringen.html">Ervaringen</a></li>
-            <li><a class="effect" href="Contact.html">Contact</a></li>
-            <li><a class="effect" href="Projecten.html">Projecten</a></li>
-        </ul>
-    </nav>
+<body onload="getTimeBasedGreeting()">
+    <?php require "nav-head.php"?>
     <div class="index-main">
-        <article class="about-me">
-            <h1 class="text-about">Hallo, Ik ben Kaj - Software Developer</h1> 
+        <article>
+            <h1 id="begroeting"></h1> 
             <p>Ik ben Kaj, een student softwareontwikkeling aan het Techniek College in Rotterdam Oost. Ik heb een passie voor programmeren
                  en werk graag in teamverband volgens de Scrum-methodologie. Door mijn opleiding en praktijkervaring ontwikkel ik zowel 
                  technische vaardigheden als een goed begrip van agile processen, wat mij helpt om effectief samen te werken en innovatieve 
@@ -58,6 +45,7 @@
         </label>
     </footer>
     <script src="main.js"></script>
+    <script src="begroeting.js"></script>
 </body>
 </html>
 

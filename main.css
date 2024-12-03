@@ -141,7 +141,7 @@ article a{
 }
 
 article {
-    width: 500px;
+    width: 650px;
     text-align: left;
     padding: 20px;
     border-left: 2px solid white;
@@ -392,6 +392,10 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     transform: translateX(26px);
+}
+
+.tijdb{
+    
 }
 
 

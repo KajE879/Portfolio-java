@@ -19,21 +19,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 // Toggle light mode
-document.addEventListener('DOMContentLoaded', (event) => {
-    if (localStorage.getItem('lightMode') === 'true') {
-        document.body.classList.add('light-mode');
-        document.getElementById('colorSwitchLabel').checked = true;
-    }
-});
-document.getElementById('colorSwitchLabel').addEventListener('change', function () {
-    if (this.checked) {
-        document.body.classList.add('light-mode');
-        localStorage.setItem('lightMode', 'true');
-    } else {
-        document.body.classList.remove('light-mode');
-        localStorage.setItem('lightMode', 'false');
-    }
-});
+function toggleLightMode() {
+    const lightModeEnabled = localStorage.getItem('lightMode') === 'true';
+    const colorSwitchLabel = document.getElementById('colorSwitchLabel');
+    document.body.classList.toggle('light-mode', lightModeEnabled);
+    colorSwitchLabel.checked = lightModeEnabled;
+    colorSwitchLabel.addEventListener('change', function () {
+        const isChecked = this.checked;
+        document.body.classList.toggle('light-mode', isChecked);
+        localStorage.setItem('lightMode', isChecked);
+    });
+}
+
+toggleLightMode();
 
 // console.log 
 const form = document.querySelector('#mijnFormulier');
@@ -48,7 +46,6 @@ form.addEventListener('submit', (event) => {
     console.log('Bericht:', messageInput);
 });
 
-
 function handleContactClick() { 
     console.log('CV button was clicked.'); 
     location.href = 'Contact.html'; 
@@ -56,4 +53,7 @@ function handleContactClick() {
 function handleDownloadClick() { 
     console.log('Download button was clicked.'); 
     location.href = 'images/CV-KajvEs.pdf'; 
+}
+function logNavChange(navItem) {
+    console.log(`Navigation changed to: ${navItem}`);
 }
