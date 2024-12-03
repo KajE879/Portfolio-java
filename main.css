@@ -1,197 +1,142 @@
-/* Main */
-h1 {
-    font-family: sans-serif;
-    color: #006eb0;
-    font-size: 1.7em;
-    transition: color 3s;
-}
-
-h2 {
-    color: white;
-    text-decoration: none;
-    font-size: 1.125em;
-}
-
-p {
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-}
-
-header img {
-    width: 75px;
-}
-
-.text-roman {
-    font-family: 'Times New Roman', Times, serif;
-}
-
+/* ---Main--- */
 body {
     height: 100vh;
     background: url(images/background.jpg) center no-repeat;
     background-size: cover;
     background-color: #000;
     color: white;
+    h1 {
+        font-family: sans-serif;
+        color: #006eb0;
+        font-size: 1.7em;
+        transition: color 3s;
+    }
+    h2 {
+        color: white;
+        text-decoration: none;
+        font-size: 1.125em;
+    }
+    p {
+        font-family: Arial, sans-serif;
+        font-size: 1em;
+    }
 }
-
-.text-blue {
-    color: #006eb0;
-}
-
-.text-bold {
-    font-weight: bold;
-}
-
-/* Ervaringen Video */
+/* ---Ervaringen--- */
 .erv-main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
     gap: 200px;
+    a {
+        text-decoration: none;
+    }
+    h2 {
+        transition: color 0.5s;
+    }
+    video {
+        height: 300px;
+        width: 550px;
+    }
+    table {
+        color: white;
+        text-align: center;
+        width: 500px;
+        height: 250px;
+        tr:hover td {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        thead {
+            height: 50px;
+            th {
+                background-color: rgba(0, 109, 176, 0.4);
+            }
+        }
+        td {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: background-color 0.5s;
+        }
+    }
 }
-
-video {
-    height: 300px;
-    width: 550px;
-}
-
-.erv-main a {
-    text-decoration: none;
-}
-
-.erv-main h2 {
-    transition: color 0.5s;
-}
-
-/* Header Navigation */
+/* ---Header/Nav--- */
 header {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    img {
+        width: 75px;
+    }
 }
-
 nav {
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 50px; 
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+        .effect:hover {
+            color: #006eb0;
+        }
+        
+    }
 }
-
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 50px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.effect:hover {
-    color: #006eb0;
-}
-
-/* Table */
-table {
-    color: white;
-    text-align: center;
-    width: 500px;
-    height: 250px;
-}
-
-thead {
-    height: 50px;
-}
-
-th {
-    background-color: rgba(0, 109, 176, 0.4);
-}
-
-td {
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    transition: background-color 0.5s;
-}
-
-table tr:hover td {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Index */
-article button {
-    background-color: rgba(180, 180, 180, 0.5);
-    padding: 15px 45px;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    color: white;
-    text-align: center;
-    display: inline-block;
-    font-size: 1em;
-    transition: background-color 0.5s;
-    border-radius: 0px;
-}
-
-article a{
-    text-decoration: none;
-    color: white;
-}
-
-article {
-    width: 650px;
-    text-align: left;
-    padding: 20px;
-    border-left: 2px solid white;
-}
-
-.foto-me {
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgb(0, 110, 176);
-}
-
+/* ---Index--- */
 .index-main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
     gap: 300px;
+    .foto-me {
+        width: 350px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgb(0, 110, 176);
+    }
+    article {
+        text-align: left;
+        padding: 20px;
+        border-left: 2px solid white;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        button {
+            background-color: rgba(180, 180, 180, 0.5);
+            padding: 15px 45px;
+            border-left: 2px solid white;
+            border-right: 2px solid white;
+            border-top: none;
+            border-bottom: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 1em;
+            transition: background-color 0.5s;
+            border-radius: 0px;
+        }
+        p {
+            width: 450px;
+        }
+        .buttons {
+            display: flex;
+            gap: 25px;
+            .beffect:hover {
+                background-color: rgba(0, 109, 176, 0.5);
+            }
+        }
+    }
 }
-
-.buttons {
-    display: flex;
-    gap: 25px;
-}
-
-.beffect:hover {
-    background-color: rgba(0, 109, 176, 0.5);
-}
-
-/* Projects */
-.polaroid {
-    background-color: rgba(0, 0, 0, 0.66);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-    width: 400px;
-    border-radius: 25px;
-}
-
-.container {
-    text-align: center;
-}
-
-.img-polaroid {
-    width: 400px;
-    height: 225px;
-    border-radius: 25px;
-}
-
-.link-pol {
-    text-decoration: none;
-}
-
+/* ---Projecten--- */
 .projects {
     display: flex;
     justify-content: center;
@@ -199,42 +144,25 @@ article {
     min-height: 40vh;
     gap: 50px;
     margin-top: 35px;
+    .polaroid {
+        background-color: rgba(0, 0, 0, 0.66);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+        width: 400px;
+        border-radius: 25px;
+        img {
+            width: 400px;
+            height: 225px;
+            border-radius: 25px;
+        }
+        .container {
+            text-align: center;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
-
-/* Contact */
-.contacts {
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 2px solid white;
-    color: white;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    width: 500px;
-}
-
-.socials a img {
-    width: 60px;
-}
-
-p a {
-    text-decoration: none;
-    color: rgba(180, 180, 180, 0.75);
-    transition: color 0.5s;
-}
-
-.socials {
-    background-color: rgba(180, 180, 180, 0.5);
-    border: 2px solid white;
-    border-radius: 25px;
-    padding: 5px;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-}
-
+/* ---Contact--- */
 .social-contact {
     display: flex;
     justify-content: center;
@@ -243,52 +171,79 @@ p a {
     flex-direction: column;
     gap: 25px;
     margin-top: 40px;
-}
-
-.contact-form {
-    width: 100%;
-}
-
-.contact-form h2 {
-    margin-bottom: 15px;
-    color: white;
-}
-
-.contact-form label {
-    font-size: 1em;
-    color: white;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 3px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-}
-
-.contact-form button {
-    padding: 10px 15px;
-    color: #fff;
-    background-color: rgba(180, 180, 180, 0.5);
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.5s;
-}
-
-.contact-form button:hover {
-    background-color: rgb(0, 110, 176);
-}
-
+    .contacts {
+      background-color: rgba(0, 0, 0, 0.75);
+      border: 2px solid white;
+      color: white;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 30px;
+      width: 500px;
+      p a {
+        text-decoration: none;
+        color: rgba(180, 180, 180, 0.75);
+        transition: color 0.5s;
+      }
+      h1 {
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .contact-form {
+        width: 100%;
+        h2 {
+          margin-bottom: 15px;
+          color: white;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        label {
+          font-size: 1em;
+          color: white;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin: 3px 0;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          background-color: rgb(255, 255, 255);
+        }
+        button {
+          padding: 10px 15px;
+          color: #fff;
+          background-color: rgba(180, 180, 180, 0.5);
+          border: none;
+          border-radius: 5px;
+          transition: background-color 0.5s;
+  
+          &:hover {
+            background-color: rgb(0, 110, 176);
+          }
+        }
+      }
+    }
+    .socials {
+      background-color: rgba(180, 180, 180, 0.5);
+      border: 2px solid white;
+      border-radius: 25px;
+      padding: 5px;
+      text-align: center;
+      width: 300px;
+      margin: 0 auto;
+      img {
+        width: 60px;
+      }
+    }
+  }
+/* ---Footer--- */
 footer {
     display: flex;
     justify-content: right;
     align-items: bottom;
 }
-
-/* Cookie Consent */
+/* ---Cookie--- */
 .cookie-consent {
     position: fixed;
     top: 0;
@@ -300,167 +255,124 @@ footer {
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
+    .cookie-content {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 500px;
+        width: 90%;
+        p {
+            color: #fff;
+        }
+        label {
+            color: #fff;
+            margin-right: 15px;
+        }
+        button {
+            background-color: rgb(0, 110, 176);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 4px 2px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            &:hover {
+                background-color: rgb(0, 110, 176);
+            }
+        }
+        .check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            input[type="checkbox"] {
+                margin-right: 10px;
+            }
+        }
+    }
 }
-
-.cookie-content {
-    background: rgba(0, 0, 0, 0.75);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    max-width: 500px;
-    width: 90%;
-}
-
-.cookie-content p {
-    color: #fff;
-}
-
-.cookie-content label {
-    color: #fff;
-    margin-right: 15px;
-}
-
-button {
-    background-color: rgb(0, 110, 176);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: rgb(0, 110, 176);
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-/* Switch */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: #000000;
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
-
-.tijdb{
-    
-}
-
-
-
-
-
-
-
-/* Light Mode */
+/* ---Lightmode--- */
 body.light-mode {
     background: url(images/bwhite.jpg) center no-repeat;
     background-size: cover;
     background-color: #cccccc;
     color: black;
+    h2, p, nav a {
+        color: black;
+    }
+    table {
+        color: black;
+        td {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+    }
+    article {
+        border-left: 2px solid rgb(0, 0, 0);
+        button {
+            border-left: 2px solid rgb(0, 0, 0);
+            border-right: 2px solid rgb(0, 0, 0);
+            border-top: none;
+            border-bottom: none;
+            background-color: rgba(80, 80, 80, 0.5);
+        }
+        a {
+            color: black;
+        }
+    }
+    .contacts {
+        background-color: rgba(255, 255, 255, 0.75);
+        border: 2px solid rgb(0, 0, 0);
+        .contact-form {
+            label {
+                color: black;
+            }
+            input, 
+            textarea { 
+                background-color: rgb(200, 200, 200); 
+                border: 1px solid #ffffff;
+            }
+        }
+        a {
+            color: rgba(80, 80, 80, 0.75);
+            transition: color 0.5s;
+            &:hover {
+                color: rgb(0, 110, 176);
+            }
+        }
+    }
+    .socials {
+        border: 2px solid black;
+    }
+    .polaroid  {
+        background-color: rgba(255, 255, 255, 0.66);
+    }
+    .buttonlight {
+        background-color: rgba(0, 0, 0);
+        color: white;
+        &:hover {
+            background-color: rgb(0, 110, 176);
+        }
+    }
 }
-
-body.light-mode h2, body.light-mode p, body.light-mode nav a{
+/* ---Lightmode Button--- */
+.buttonlight {
     color: black;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        background-color: rgb(0, 110, 176);
+        transition: background-color 0.5s;
+    }
 }
 
-body.light-mode table{
-    color: black;
-}
-body.light-mode td{
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-body.light-mode article button{
-    border-left: 2px solid rgb(0, 0, 0);
-    border-right: 2px solid rgb(0, 0, 0);
-    background-color: rgba(80, 80, 80, 0.5);
-}
-body.light-mode article a{
-    color: black;
-}
-body.light-mode article{
-    border-left: 2px solid rgb(0, 0, 0);
-}
-body.light-mode .contacts{
-    background-color: rgba(255, 255, 255, 0.75);
-    border: 2px solid rgb(0, 0, 0);
-}
-body.light-mode label{
-    color: black;
-}
-
-body.light-mode .contact-form input, .contact-form textarea {
-    background-color: rgb(200, 200, 200);
-    border: 1px solid #ffffff;
-}
-
-body.light-mode .socials{
-    border: 2px solid black;
-}
-
-body.light-mode .contacts a {
-    color: rgba(80, 80, 80, 0.75);
-    transition: color 0.5s;
-}
-
-body.light-mode .contacts a:hover {
-    color: rgb(0, 110, 176);
-}
-
-body.light-mode .polaroid  {
-    background-color: rgba(255, 255, 255, 0.66);
-}
 
 

@@ -11,41 +11,36 @@
     <div class="projects">
         <div class="polaroid">
             <a href="https://github.com/KajE879/portfolio-website" target="_blank">
-                <img class="img-polaroid" src="images/portfolio.png" alt="logo for my portofolio website">
+                <img src="images/portfolio.png" alt="logo for my portofolio website">
             </a>
             <div class="container">
-                <a class="link-pol" href="https://github.com/KajE879/portfolio-website" target="_blank">
+                <a href="https://github.com/KajE879/portfolio-website" target="_blank">
                     <h2>Portfolio website</h2>
                 </a>
             </div>
         </div>
         <div class="polaroid">
             <a href="#">
-                <img class="img-polaroid" src="images/Comingsoon.png" alt="">
+                <img src="images/Comingsoon.png" alt="">
             </a>
             <div class="container">
-                <a class="link-pol" href="#">
+                <a href="#">
                     <h2>COMING SOON!</h2>
                 </a>
             </div>
         </div>
         <div class="polaroid">
             <a href="#">
-                <img class="img-polaroid" src="images/Comingsoon.png" alt="">
+                <img src="images/Comingsoon.png" alt="">
             </a>
             <div class="container">
-                <a class="link-pol" href="#">
+                <a href="#">
                     <h2>COMING SOON!</h2>
                 </a>
             </div>
         </div>
     </div>
-    <footer>
-        <label class="switch">
-            <input type="checkbox" id="colorSwitchLabel">
-            <span class="slider"></span>
-        </label>
-    </footer>
+    <?php require "footer.php"?>
     <script src="main.js"></script>
 </body>
 </html>

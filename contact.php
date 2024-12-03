@@ -10,7 +10,7 @@
 <?php require "nav-head.php"?>
     <main class="social-contact">
         <div class="contacts">
-            <h1 class="text-roman">Contact:</h1>
+            <h1>Contact:</h1>
             <p>Private-Email: 
                 <a class="effect" href="mailto:kajvanes8@gmail.com">kajvanes8@gmail.com</a>
             </p>
@@ -21,7 +21,7 @@
                 <a class="effect" href="tel:+3114103021">+31 6 14103021</a>
             </p>
             <div class="contact-form">
-                <h2 class="text-roman">Send me a massage</h2>
+                <h2>Send me a massage</h2>
                 <form id="mijnFormulier">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -45,12 +45,7 @@
             </a>
         </div>
     </main>
-    <footer>
-        <label class="switch">
-            <input type="checkbox" id="colorSwitchLabel">
-            <span class="slider"></span>
-        </label>
-    </footer>
+    <?php require "footer.php"?>
     <script src="main.js"></script>
 </body>
 </html>

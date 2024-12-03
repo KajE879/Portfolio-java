@@ -24,8 +24,8 @@
                     <th>Niveau</th>
                     <th>Plaats</th>
                 </tr>
-                </thead>
-                <tbody>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Sep 2020 - Jul 2024</td>
                     <td>Havo 1 t/m 4</td>
@@ -39,12 +39,7 @@
             </tbody>
         </table>
     </div>
-    <footer>
-        <label class="switch">
-            <input type="checkbox" id="colorSwitchLabel">
-            <span class="slider"></span>
-        </label>
-    </footer>
+    <?php require "footer.php"?>
     <script src="main.js"></script>
 </body>
 </html>

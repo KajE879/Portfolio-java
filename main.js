@@ -21,17 +21,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 // Toggle light mode
 function toggleLightMode() {
     const lightModeEnabled = localStorage.getItem('lightMode') === 'true';
-    const colorSwitchLabel = document.getElementById('colorSwitchLabel');
     document.body.classList.toggle('light-mode', lightModeEnabled);
-    colorSwitchLabel.checked = lightModeEnabled;
-    colorSwitchLabel.addEventListener('change', function () {
-        const isChecked = this.checked;
-        document.body.classList.toggle('light-mode', isChecked);
-        localStorage.setItem('lightMode', isChecked);
-    });
 }
+function switchLightMode() {
+    const lightModeEnabled = !document.body.classList.contains('light-mode');
+    document.body.classList.toggle('light-mode', lightModeEnabled);
+    localStorage.setItem('lightMode', lightModeEnabled);
+}
+document.addEventListener('DOMContentLoaded', toggleLightMode);
 
-toggleLightMode();
+
 
 // console.log 
 const form = document.querySelector('#mijnFormulier');

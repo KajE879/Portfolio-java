@@ -38,12 +38,7 @@
             </div>  
         </div>
     </div>
-    <footer>
-        <label class="switch">
-            <input type="checkbox" id="colorSwitchLabel">
-            <span class="slider"></span>
-        </label>
-    </footer>
+    <?php require "footer.php"?>
     <script src="main.js"></script>
     <script src="begroeting.js"></script>
 </body>
