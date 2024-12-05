@@ -56,3 +56,14 @@ function handleDownloadClick() {
 function logNavChange(navItem) {
     console.log(`Navigation changed to: ${navItem}`);
 }
+
+// Hamburger
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+});
+
