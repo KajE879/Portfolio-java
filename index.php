@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body onload="getTimeBasedGreeting()">
-    <button class="hamburger-menu" onclick="toggleMenu()">&#xf0c9;</button>
     <?php require "nav-head.php"?>
     <div class="index-main">
         <article>

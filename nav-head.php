@@ -1,3 +1,4 @@
+<button class="hamburger-menu" onclick="toggleMenu()">Nav</button>
 <header class="desktop-nav">
     <a href="index.php">
         <img src="images/logo.png" alt="website logo">
@@ -11,7 +12,6 @@
         <li><a href="projecten.php">Projecten</a></li>
     </ul>
 </nav>
-
 <section>
     <a href="index.php">
         <img class="logo" src="images/logo.png" alt="website logo">
