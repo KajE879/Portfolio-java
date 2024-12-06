@@ -45,25 +45,9 @@ form.addEventListener('submit', (event) => {
     console.log('Bericht:', messageInput);
 });
 
-function handleContactClick() { 
-    console.log('CV button was clicked.'); 
-    location.href = 'Contact.html'; 
-} 
-function handleDownloadClick() { 
-    console.log('Download button was clicked.'); 
-    location.href = 'images/CV-KajvEs.pdf'; 
-}
-function logNavChange(navItem) {
-    console.log(`Navigation changed to: ${navItem}`);
-}
+
 
 // Hamburger
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-});
-
+function toggleMenu() {
+    document.getElementById("mobile-nav").classList.toggle("show-mobile-nav");
+}
