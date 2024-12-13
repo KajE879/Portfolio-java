@@ -10,14 +10,15 @@
     <?php require "nav-head.php"?>
     <div class="index-main">
         <article>
-            <h1 id="begroeting"></h1> 
+            <h1 id="begroeting"></h1>
+            <div id="demo"></div>
             <p>Ik ben Kaj, een student softwareontwikkeling aan het Techniek College in Rotterdam Oost. Ik heb een passie voor programmeren
                  en werk graag in teamverband volgens de Scrum-methodologie. Door mijn opleiding en praktijkervaring ontwikkel ik zowel 
                  technische vaardigheden als een goed begrip van agile processen, wat mij helpt om effectief samen te werken en innovatieve 
                  oplossingen te ontwikkelen.</p>
                  <div class="buttons">
                     <button onclick="handleContactClick()" class="beffect">
-                        <a href="Contact.html">Neem contact op</a>
+                        <a href="contact.php">Neem contact op</a>
                     </button>
                     <button onclick="handleDownloadClick()" class="beffect">
                         <a href="images/CV-KajvEs.pdf" download>Download CV</a>
@@ -40,7 +41,6 @@
     </div>
     <?php require "footer.php"?>
     <script src="main.js"></script>
-    <script src="begroeting.js"></script>
 </body>
 </html>
 

@@ -1,4 +1,6 @@
-<button class="hamburger-menu" onclick="toggleMenu()">Nav</button>
+<button class="hamburger-menu" onclick="toggleMenu()">
+    &#9776;
+</button>
 <header class="desktop-nav">
     <a href="index.php">
         <img src="images/logo.png" alt="website logo">
