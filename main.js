@@ -65,15 +65,14 @@ function startCountdown(endDate) {
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("demo").innerHTML = 
-        "Vakantie in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      document.getElementById("demo").innerHTML = "Vakantie in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
       if (distance < 0) {
         clearInterval(this);
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
 }
-startCountdown("Dec 20, 2024 17:00:00");
+startCountdown("Dec 20, 2024 13:15:00");
 
 // tijdgebonden begroeting
 function begroetBezoeker() { 
