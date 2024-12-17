@@ -17,10 +17,10 @@
                  technische vaardigheden als een goed begrip van agile processen, wat mij helpt om effectief samen te werken en innovatieve 
                  oplossingen te ontwikkelen.</p>
                  <div class="buttons">
-                    <button onclick="handleContactClick()" class="beffect">
+                    <button class="beffect">
                         <a href="contact.php">Neem contact op</a>
                     </button>
-                    <button onclick="handleDownloadClick()" class="beffect">
+                    <button class="beffect">
                         <a href="images/CV-KajvEs.pdf" download>Download CV</a>
                     </button>
                 </div>                

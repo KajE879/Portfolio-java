@@ -12,26 +12,25 @@ function acceptCookies() {
         alert("Please accept the cookies to proceed.");
     }
 }
-document.addEventListener('DOMContentLoaded', (event) => {
-    const consentPopup = document.querySelector('.cookie-consent');
-    if (localStorage.getItem('cookiesAccepted') === 'true') {
-        if (consentPopup) {
-            consentPopup.style.display = 'none';
-        }
+const consentPopup = document.querySelector('.cookie-consent');
+if (localStorage.getItem('cookiesAccepted') === 'true') {
+    if (consentPopup) {
+        consentPopup.style.display = 'none';
     }
-});
+}
 
 // Toggle light mode
 function toggleLightMode() {
     const lightModeEnabled = localStorage.getItem('lightMode') === 'true';
     document.body.classList.toggle('light-mode', lightModeEnabled);
 }
+
 function switchLightMode() {
     const lightModeEnabled = !document.body.classList.contains('light-mode');
     document.body.classList.toggle('light-mode', lightModeEnabled);
     localStorage.setItem('lightMode', lightModeEnabled);
 }
-document.addEventListener('DOMContentLoaded', toggleLightMode);
+toggleLightMode();
 
 // console.log 
 const form = document.querySelector('#mijnFormulier');
@@ -75,22 +74,24 @@ function startCountdown(endDate) {
 startCountdown("Dec 20, 2024 13:15:00");
 
 // tijdgebonden begroeting
-function begroetBezoeker() { 
-    var datum = new Date(); 
-    var uur = datum.getHours(); 
-    var begroeting; 
-    if (uur >= 0 && uur < 6) { 
-        begroeting = "Goedenacht"; 
-    } else if (uur >= 6 && uur < 12) { 
-        begroeting = "Goedemorgen"; 
-    } else if (uur >= 12 && uur < 18) { 
-        begroeting = "Goedemiddag"; 
-    } else if (uur >= 18 && uur < 24) { 
-        begroeting = "Goedenavond"; 
-    } 
-    document.getElementById("begroeting").innerText = begroeting + ", Ik ben Kaj - Software Developer"; 
-} 
-window.onload = begroetBezoeker;
+function begroetBezoeker() {
+    var datum = new Date();
+    var uur = datum.getHours();
+    var begroeting;
+    if (uur >= 0 && uur < 6) {
+        begroeting = "Goedenacht";
+    } else if (uur >= 6 && uur < 12) {
+        begroeting = "Goedemorgen";
+    } else if (uur >= 12 && uur < 18) {
+        begroeting = "Goedemiddag";
+    } else if (uur >= 18 && uur < 24) {
+        begroeting = "Goedenavond";
+    }
+    document.getElementById("begroeting").innerText = begroeting + ", Ik ben Kaj - Software Developer";
+}
+begroetBezoeker();
+
+
 
 
   
